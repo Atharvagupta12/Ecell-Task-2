@@ -42,7 +42,7 @@ li a{
 }
 
 .about {
-    padding: 2% 12%;
+    padding: 5% 12%;
     width: 100%;
     text-align: center;
 }
@@ -80,14 +80,17 @@ li a{
 
 /* --Gallery-- */
 .grid-container {
+    text-align: center;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px,3fr));
     gap: 2rem;
     padding: 2rem;
 }
-
+.grid-element{
+    text-align: center;
+}
 .grid-element img{
-
+border-radius: 10px;
   padding: 3rem;
   color: #fff;
   border-radius: 10px;
@@ -96,12 +99,64 @@ li a{
     text-align: center;
 justify-content: center;
 }
+.footer{
+    height: 40vh;
+    background-color: rgb(236, 236, 236);
+}
+.container2{
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
 
 /* --media queries-- */
 @media(max-width:1100px){
    .slide{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
    }
  
+}
+@media(max-width:1000px){
+    .about{
+        padding-top: 5%;
+    }
+    .slide{
+       text-align: center;
+        margin-bottom: 5%;
+    }
+    .lottie{
+      height:;
+      width:;
+    }
+}
+@media(max-width:700px){
+    .grid-element img{
+        padding: 0;
+    }
+    .footer{
+        height:max-content;
+       padding: 2% 7%;
+    }
+    .div1{
+        display: none;
+    }
+    .container2{
+        display: flex;
+        flex-direction: column;
+    }
+    .heading{
+        font-size: 30px;
+    }
+}
+@media(max-width:450px){
+    .grid-element{
+        width: 30%;
+    }
+    .heading h1{
+        font-size: 25px;
+    }
+    .about p{
+        font-size: 16px;
+    }
 }
