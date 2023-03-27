@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg-light{
+    background-color: white;
+}
+ul {
+    gap: 2rem;
+}
+li a{
+    color: black !important;
+    font-size: 20px;
+}
+.lottie {
+    width: 50%;
+}
+
+.slide {
+    align-items: center;
+    display: flex;
+    justify-content: justify;
+}
+
+.heading h1 {
+    font-size: 55px;
+}
+
+.button button {
+    font-size: 21px;
+    font-weight: 500;
+    border-radius: 20px;
+    border: 2px solid darkblue;
+    background-color: white;
+    padding: 4px 15px;
+}
+
+/* --about-- */
+.section2 {
+    text-align: center;
+}
+
+.about {
+    padding: 2% 12%;
+    width: 100%;
+    text-align: center;
+}
+
+.about p {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 500;
+    word-spacing: 2px;
+    margin: 4%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+    margin: 5% 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.course-col {
+    width: 400px;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.section3 {
+    text-align: center;
+}
+
+/* --Gallery-- */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px,3fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.grid-element img{
+
+  padding: 3rem;
+  color: #fff;
+  border-radius: 10px;
+}
+.carousel{
+    text-align: center;
+justify-content: center;
+}
+
+/* --media queries-- */
+@media(max-width:1100px){
+   .slide{
+    display: flex;
+    flex-direction: column-reverse;
+   }
+ 
+}
